@@ -34,7 +34,6 @@ public class ItemController {
 	@RequestMapping(value="/item/save", method=RequestMethod.POST)
 	@ResponseBody
 	public E3Result addItem(TbItem item, String desc) {
-		System.out.println("addItem===========");
 		E3Result result = itemService.addItem(item, desc);
 		return result;
 	}
